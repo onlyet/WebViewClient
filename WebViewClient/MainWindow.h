@@ -27,7 +27,7 @@ protected:
 private:
     Ui::MainWindow	*ui;
     QWebEngineView	*m_webView;
-	QLabel		    *m_timeLabel;
+	//QLabel		    *m_timeLabel;
 
 };
 #endif // MAINWINDOW_H

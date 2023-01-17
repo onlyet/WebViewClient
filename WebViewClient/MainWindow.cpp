@@ -14,7 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
     , m_webView(nullptr)
-    , m_timeLabel(nullptr)
+    //, m_timeLabel(nullptr)
 {
     ui->setupUi(this);
 
@@ -27,10 +27,10 @@ MainWindow::MainWindow(QWidget *parent)
 	m_webView->load(url);
     m_webView->show();
 
-	m_timeLabel = new QLabel();
-	m_timeLabel->setFixedSize(QApplication::desktop()->availableGeometry().width(), 40);
-	m_timeLabel->setText("hello world");
-	m_timeLabel->setFrameShape(QFrame::Box);
+	//m_timeLabel = new QLabel();
+	//m_timeLabel->setFixedSize(QApplication::desktop()->availableGeometry().width(), 40);
+	//m_timeLabel->setText("hello world");
+	//m_timeLabel->setFrameShape(QFrame::Box);
 
 	ui->mainLayout->addWidget(m_webView);
 	//ui->mainLayout->addWidget(m_timeLabel);
