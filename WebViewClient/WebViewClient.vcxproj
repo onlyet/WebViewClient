@@ -55,7 +55,7 @@
     <QtModules>core;gui;webengine;webenginewidgets;widgets</QtModules>
   </PropertyGroup>
   <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <QtInstall>5.14.1_x86</QtInstall>
+    <QtInstall>5.12.9_x86</QtInstall>
     <QtModules>core;gui;webengine;webenginewidgets;widgets</QtModules>
   </PropertyGroup>
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
