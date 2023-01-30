@@ -14,6 +14,10 @@ int main(int argc, char *argv[])
 		return -1;
 	}
 
+#if 0
+	a.setWindowIcon(QIcon(":/momo1.ico"));
+#endif
+
 	QString title = CONFIG.mainWindowTitle();
 	QString serverUrl = CONFIG.serverUrl();
 

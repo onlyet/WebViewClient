@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>momo1.ico</file>
+    </qresource>
+</RCC>
