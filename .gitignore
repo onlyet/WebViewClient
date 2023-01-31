@@ -265,3 +265,5 @@ zlib/
 
 BinaryCompatibilityTest/
 .vshistory
+
+*.exe
