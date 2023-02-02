@@ -5,7 +5,8 @@
 #include "CWebEngineView.h"
 
 #include <QWebEngineView>
-#include <QDesktopWidget>
+//#include <QDesktopWidget>
+#include <QScreen>
 #include <qlabel.h>
 #include <qstatusbar.h>
 #include <qtimer.h>
@@ -20,7 +21,8 @@ MainWindow::MainWindow(QWidget *parent)
 
     m_webView = new CWebEngineView();
 	m_webView->setPage(new CustomWebEnginePage());
-    m_webView->setFixedSize(QApplication::desktop()->availableGeometry().width(), QApplication::desktop()->availableGeometry().height()-40);
+	//m_webView->setFixedSize(QApplication::desktop()->availableGeometry().width(), QApplication::desktop()->availableGeometry().height() - 40);
+	m_webView->setFixedSize(QApplication::primaryScreen()->availableGeometry().width(), QApplication::primaryScreen()->availableGeometry().height() - 40);
 
 	QString url = CONFIG.serverUrl();
 	//m_webView->load(QString("https://www.baidu.com"));

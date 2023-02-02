@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
 
 	if (!CONFIG.loadConfiguration(QCoreApplication::applicationDirPath() + "/Global.json"))
 	{
+		qDebug() << "ÕÒ²»µ½ Global.json";
 		return -1;
 	}
 
