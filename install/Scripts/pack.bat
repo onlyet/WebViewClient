@@ -38,7 +38,7 @@ rem ECHO %VER%
 SET VER=%VER:~2%
 ECHO %VER%
 
-"makensis.exe" -DVER=%VER% "pack.nsi"
+"makensis.exe" -DVER=%VER% "WebViewClient.nsi"
 
 rem here ends the command you want to measure
 
