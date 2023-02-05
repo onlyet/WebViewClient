@@ -62,7 +62,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)common\dump;$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -70,7 +70,7 @@
     <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)common\dump;$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
     <LinkIncremental>
     </LinkIncremental>
@@ -138,6 +138,7 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <Optimization>MaxSpeed</Optimization>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -164,6 +165,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\common\dump\dump.cpp" />
     <ClCompile Include="CustomWebEnginePage.cpp" />
     <ClCompile Include="CWebEngineView.cpp" />
     <ClCompile Include="GlobalConfig.cpp" />
@@ -182,6 +184,7 @@
   <ItemGroup>
     <QtMoc Include="CustomWebEnginePage.h" />
     <QtMoc Include="CWebEngineView.h" />
+    <ClInclude Include="..\common\dump\dump.h" />
     <ClInclude Include="Singleton.h" />
   </ItemGroup>
   <ItemGroup>

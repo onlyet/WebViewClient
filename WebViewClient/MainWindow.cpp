@@ -42,13 +42,20 @@ MainWindow::MainWindow(QWidget *parent)
 	QTimer *pTimer = new QTimer(this);
 	connect(pTimer, &QTimer::timeout, this, &MainWindow::onSetTime);
 	pTimer->start(1000);
+
+#if 0
+	QTimer::singleShot(5 * 1000, []() {
+		int* bug = nullptr;
+		*bug = 3;
+	});
+#endif
 }
 
 MainWindow::~MainWindow()
 {
-    delete m_webView;
-    m_webView = nullptr;
-    delete ui;
+	delete m_webView;
+	m_webView = nullptr;
+	delete ui;
 }
 
 void MainWindow::refreshDateTime()

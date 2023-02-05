@@ -23,6 +23,12 @@
       <Extensions>qrc;*</Extensions>
       <ParseFiles>false</ParseFiles>
     </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{f9a69b02-1bb7-43dd-a862-fd8289141e79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\dump">
+      <UniqueIdentifier>{bc293e11-540b-4a19-8940-ac54ff98214d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -39,6 +45,9 @@
     </ClCompile>
     <ClCompile Include="CWebEngineView.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\dump\dump.cpp">
+      <Filter>common\dump</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +72,9 @@
   <ItemGroup>
     <ClInclude Include="Singleton.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\dump\dump.h">
+      <Filter>common\dump</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

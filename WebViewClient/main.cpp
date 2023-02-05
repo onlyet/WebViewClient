@@ -1,5 +1,8 @@
 #include "MainWindow.h"
 #include "GlobalConfig.h"
+
+#include <dump.h>
+
 #include <QApplication>
 #include <qstatusbar.h>
 #include <qdir.h>
@@ -8,6 +11,10 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+
+#if 1
+	Dump::Init(QString("%1/dump").arg(a.applicationDirPath()));
+#endif
 
 	if (!CONFIG.loadConfiguration(QCoreApplication::applicationDirPath() + "/Global.json"))
 	{
